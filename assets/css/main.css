@@ -1,0 +1,411 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 886px;
+}
+.top{
+    display: flex;
+    background-color: #000000;
+    height: 33px;
+    justify-content: flex-end;
+}
+.sony_logo{
+    color: #000000;
+    width: 75px;
+    height: 36px;
+}
+.sony_logo img{
+    width: 100%;
+    height: auto;
+}
+.first_menu{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 41px;
+    font-size: 13px;
+}
+.left_menu li:hover .dropdown li{
+    top: 0;
+    display: block;
+}
+.left_menu{
+    display: flex
+}
+.ps_bluelogo{
+    height: 21px;
+    width: 27px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.ps_bluelogo img{
+    width: 100%;
+    height: 100%;
+}
+nav ul, nav a{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav .active a{
+    padding: 23px;
+    color: #008cff;
+    border-bottom: 4px solid #008cff;
+}
+nav a{
+    /*display: block;*/
+    padding: 12px;
+    color: grey;
+}
+nav a:hover{
+    color: #008cff;
+}
+.nav_espec ul {
+    position: relative;
+}
+.nav_espec ul ul{
+    position: absolute;
+    top: 55px;
+    visibility: hidden;
+}
+.nav_espec ul li ul:hover{
+    visibility: visible;
+    background-color: red;
+}
+.material-icons.md-18 { 
+    font-size: 18px;
+}
+
+.second_menu{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.second_menu a{
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu_central{
+    margin-left: 170px;
+    justify-content: flex-end;
+}
+.menu_central nav ul li{
+    height: 100%;
+}
+.ps5_logo{
+    width: 200px;
+    height: 48px;
+}
+.ps5_logo img{
+    margin-left: 22px;
+    height: 100%;
+}
+.right_menu{
+    display: flex;
+}
+.right_menu i{
+    margin-left: 28px;
+    margin-right: 14px;
+}
+.right_menu button{
+    border-radius: 15px;
+    border: none;
+    background-color: #202020;
+    height: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.right_menu button:hover{
+    box-shadow: 0 0 0 3px #d4d3d3; /* box shadow circular, 0 nas duas primeiras significa que a shadow é centrada na formato do */
+}
+.sessao a{
+    color: #ffffff;
+    padding: 8px;
+}
+.sessao a:hover{
+    color: #ffffff;
+}
+.first_section{
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/banner/ps5banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 760px;
+}
+.banner_logo{
+    width: 114px;
+    height: 29px;
+}
+.banner_logo img{
+    width: 100%;
+    height: auto;
+}
+.banner_sep, .banner_inv{
+    flex: 1;
+}
+.banner_sep{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner_title{
+    display: flex;
+    flex-direction: column;
+}
+.banner_title form {
+    display: flex;
+    justify-content: center;
+}
+form button{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    width: 143px;
+    margin: 0;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 15px;
+}
+form button:hover{
+    box-shadow: 0 0 0 3px #ffffff;
+}
+.banner_title h1{
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+.second_section{
+    display: flex;
+    justify-content: center;
+    height: 1004px;
+    background-color: #dbd8d8;
+    padding: 54px;
+}
+.sec2_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2_head, .sec2_head2{
+    font-size: 40px;
+    font-weight: normal;
+}
+.sec2_video{
+    margin-top: 77px; 
+}
+.video_area{
+    position: relative;
+    height: 0px;
+    background-color: #ccc;
+    padding: 0px 0px 56.25%;
+}
+.video-area iframe{
+    position: absolute; /* é posicionado relativo ao ancestral mais proximo, elemento pai. se n tiver nenhum, puxa do body */
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+.flexColumn{
+    flex-direction: column;
+}
+.videos{
+    padding: 0;
+    display: flex;
+}
+.other_videos{
+    margin-left: 25px;
+    margin-top: 43px;
+}
+.sec2_footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+    width: 582px;
+    height: 136px;;
+}
+.final_text, .warning{
+    line-height: 25px;
+}
+.warning{
+    margin-top: 70px;
+}
+.third_section{
+    margin-top: 55px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    height: 933px;
+}
+.sec3_banner{
+    width: 885px;
+    height: 423px;
+}
+.sec3_banner img{
+    margin-top: 55px;
+    width: 100%;
+    height: auto;
+}
+.sec3_head, .sec3_text{
+    text-align: center;
+}
+.sec3_head{
+    margin-top: 70px;
+    font-size: 30px;
+}
+.sec3_text{
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: #979696;
+}
+.sec3_details{
+    display: flex;
+    margin-top: 90px;
+    line-height: 25px;
+}
+.ssd, .es{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 304px;
+    width: 431px;
+    text-align: center;
+}
+.ssd img, .es img{
+    width: 129px;
+    height: 129px;
+}
+.fourth_section{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1)),url(../images/secao3/horizonbanner.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 1103px;
+}
+.fourth_section img{
+    opacity: 0.5;
+}
+.sec4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 886px;
+}
+.infos_end{
+    display: flex;
+    flex-direction: column;
+    width: 886px;
+}
+.sec4_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 134px;
+    width: 582px;
+    margin-top: 55px;
+    margin-bottom: 70px;
+}
+.sec4_title{
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 55px;
+}
+.sec4_desc{
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 70px; 
+}
+.sec4_img {
+    width: 100px;
+    height: 99px;
+}
+.sec4_img img{
+    width: 100%;
+    height: auto;
+}
+.sec4_infos{
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sec4_text{
+    height: 110px;
+    width: 580px;
+    text-align: justify;
+    margin-left: 24px;
+}
+.sec4_title2{
+    font-size: 21px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+.sec4_desc2{
+    font-size: 17px;
+    color: #ffffff;
+}
+.fifth_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 51px;
+}
+.sec5{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sec5_head{
+    display: flex;
+    justify-content: center;
+    width: 582px;
+    height: 96px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+    color: #000000;
+}
+.edicao{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 290px;
+    border-bottom: #979696 5px solid;
+    margin-top: 77px;
+}
+.edicao ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.edicao ul li{
+    margin-left: 14px;
+}
+.edicao a.active {
+    border-bottom: #008cff;
+}
