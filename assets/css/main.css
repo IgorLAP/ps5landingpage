@@ -393,19 +393,58 @@ form button:hover{
 .edicao{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 40px;
-    width: 290px;
+    width: 275px;
     border-bottom: #979696 5px solid;
     margin-top: 77px;
+    font-size: 15px;
 }
-.edicao ul{
-    display: flex;
-    list-style: none;
+.edicao a{
     text-decoration: none;
+    color: #555454;
 }
-.edicao ul li{
-    margin-left: 14px;
+.edicao .active{
+    color: #000000;
+    border-bottom: 4px solid #008cff;
 }
-.edicao a.active {
-    border-bottom: #008cff;
+.fisica{
+    margin-right: 19px;
+}
+.sec4_desc{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.fisico_infos, .fisico_image{
+    flex: 1;
+}
+.fisico_infos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 636px;
+    color: #000000;
+    line-height: 20px;
+    text-align: start;
+}
+.fisico_image{
+    display: flex;
+    align-items: center;
+}
+.fisico_image img{
+    width: auto;
+    height: 444px;
+}
+.infos_head{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.sub_head{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.infos_desc{
+    font-size: 16px;
+    margin-bottom: 30px;
 }
