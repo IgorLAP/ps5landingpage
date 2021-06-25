@@ -5,6 +5,7 @@ body{
 }
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 886px;
 }
@@ -211,11 +212,20 @@ form button:hover{
 .sec2_video{
     margin-top: 77px; 
 }
+.video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .video_area{
     position: relative;
     height: 0px;
-    background-color: #ccc;
     padding: 0px 0px 56.25%;
+}
+.video_area2{
+    position: relative;
+    height: 0px;
+    padding: 0px 0px 37%;
 }
 .video-area iframe{
     position: absolute; /* é posicionado relativo ao ancestral mais proximo, elemento pai. se n tiver nenhum, puxa do body */
@@ -340,7 +350,6 @@ form button:hover{
     font-size: 24px;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 70px; 
 }
 .sec4_img {
     width: 100px;
@@ -374,6 +383,7 @@ form button:hover{
     display: flex;
     justify-content: center;
     margin-top: 51px;
+    margin-bottom: 70px;
 }
 .sec5{
     display: flex;
@@ -395,8 +405,8 @@ form button:hover{
     justify-content: center;
     align-items: center;
     height: 40px;
-    width: 275px;
-    border-bottom: #979696 5px solid;
+    width: 255px;
+    border-bottom: #979696 4px solid;
     margin-top: 77px;
     font-size: 15px;
 }
@@ -441,10 +451,220 @@ form button:hover{
     margin-bottom: 30px;
 }
 .sub_head{
-    font-size: 20px;
+    font-size: 21px;
     margin-bottom: 30px;
 }
 .infos_desc{
     font-size: 16px;
     margin-bottom: 30px;
 }
+.navegue{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 41px;
+    width: 193px;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.1s linear;
+}
+.navegue:hover{
+    box-shadow:
+      0 0 0 3px hsl(0, 0%, 100%),
+      0 0 0 5px hsl(0, 89%, 43%);
+}
+.navegue a{
+    margin: 0;
+    padding: 0px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sixth_section{
+    display: flex;
+    justify-content: center;
+    background-color: #dad7d7;
+}
+.sec6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.sec6_headline{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.games{
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.game1, .game2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 24px;
+}
+.game1 img, .game2 img{
+    width: 100%;
+    height: auto;
+}
+.game_title{
+    margin-top: 24px;
+    margin-bottom: 27px;
+    font-size: 25px;
+}
+.game_desc{
+    line-height: 25px;
+}
+.saibamais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #203ff3;
+    width: 124px;
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 25px;
+    transition: all 0.1s linear;
+}
+.saibamais a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.saibamais:hover{
+    box-shadow:
+      0 0 0 2px hsl(0, 4%, 85%),
+      0 0 0 4px hsl(231, 90%, 54%);
+}
+.maisjogos{
+    margin-top: 60px;
+    height: 40px;
+    width: 194px;
+    background-color: #c0bdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold; 
+    margin-bottom: 70px;
+}
+.maisjogos a{
+    text-decoration: none;
+    color: #203ff3;
+}
+.maisjogos:hover{
+    box-shadow:
+      0 0 0 2px #dad7d7,
+      0 0 0 4px #c0bdbd;
+}
+.marvel_footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.flexStart{
+    justify-content: flex-start;
+}
+.marvel{
+    display: flex;
+    flex-direction: column;
+}
+.marvel img{
+    height: 81px;
+    width: 200px;
+}
+.marvel_copy{
+    display: flex;
+    justify-content: flex-start;
+    height: 62px;
+    width: 276px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+.marvel_desc{
+    line-height: 23px;
+    margin-bottom: 22px;
+    font-size: 14px;
+}
+.marvel_desc a{
+    color: #008cff;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    background-color: #00439c;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+footer ul, footer ul a{
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    line-height: 25px;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+.left_footer{
+    display: flex;
+    flex-direction: column;
+}
+.country{
+    display: flex;
+    color: #ffffff;
+    font-size: 14px;
+}
+.globe{
+    height: 19px;
+    width: 19px;
+    margin-right: 12px;
+}
+.globe img{
+    height: auto;
+    width: 100%;
+}
+.right_footer{
+    width: 450px;
+    display: flex;
+    font-size: 14px;
+}
+.right_footer li{
+    margin-bottom: 7px;
+}
+.sony_f_logo{
+    height: 96px;
+    width: 96px;
+    margin-bottom: 12px;
+}
+.sony_f_logo img{
+    height: auto;
+    width: 100%;
+}
+.f_up{
+    display: flex;
+    justify-content: space-between;
+}
+.sie_footer{
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    margin-top: 12px;
+}
+.sie_logo{
+    width: 129px;
+    height: 48px;
+    margin-bottom: 35px;
+}
+.sie_footer img{
+    height: auto;
+    width: 100%;
+}   
