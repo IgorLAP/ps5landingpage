@@ -5,7 +5,6 @@ body{
 }
 .container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 886px;
 }
@@ -600,10 +599,6 @@ footer{
     justify-content: center;
     padding: 70px;
     background-color: #00439c;
-}
-.footer{
-    display: flex;
-    justify-content: center;
 }
 footer ul, footer ul a{
     color: #ffffff;
