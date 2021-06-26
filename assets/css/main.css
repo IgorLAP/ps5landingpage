@@ -101,9 +101,7 @@ nav a:hover{
     margin-left: 170px;
     justify-content: flex-end;
 }
-.menu_central nav ul li{
-    height: 100%;
-}
+
 .ps5_logo{
     width: 200px;
     height: 48px;
@@ -201,6 +199,7 @@ form button:hover{
 }
 .sec2_principal{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -415,15 +414,22 @@ form button:hover{
 }
 .edicao div a{
     text-decoration: none;
-    color: #555454;
 }
 .edicoes .actives{
-    color: #000000;
     height: 100%;
     border-bottom: 4px solid #008cff;
 }
 .fisica{
     margin-right: 19px;
+}
+.fisica a{
+    color: #000000;
+}
+.digital a, .digital a:visited{
+    color: #444343;
+}   
+.digital a:hover{
+    color: rgb(134, 134, 134);
 }
 .sec4_desc{
     display: flex;
@@ -668,4 +674,41 @@ footer ul, footer ul a{
 .sie_footer img{
     height: auto;
     width: 100%;
-}   
+}
+
+@media (max-width: 1024px){
+    .flexColumnReverse{
+        flex-direction: column-reverse; 
+    }
+    .menu_central nav{
+        position: relative;
+        flex-direction: column;
+    }
+    nav .dropdown-content li:first-child{
+        color: #000000;
+        border-bottom: none;
+    }
+    .dropdown-content{
+        display: none;
+        
+        background-color: #f9f9f9;
+        top: 140px;
+    }
+    .dropdown-content :not(.dropdown-content li:first-child){
+        display: block;
+    }
+   
+}
+@media(max-width:950px){
+    .videos{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:740px){
+    .right_menu li:first-child{
+        display: none;
+    }
+    .right_menu i{
+        display: none;
+    }
+}
