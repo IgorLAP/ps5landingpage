@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="assets/images/favicon.jpg"/>
-    <script src="#.js"></script>
 </head>
 <body>
     <header>
@@ -223,14 +222,14 @@
         <div class="sec5">
             <div class="sec5_head">Escolha uma edição de console para saber mais</div>
             <div class="edicoes">
-                <div class="edicao actives">
-                    <div class="fisica">
-                        <a href="#">Console PS5</a>
+                <div class="edicao">
+                    <div class="fisica actives" onclick="activesf()">
+                        <button onclick="mudarTexto1('assets/images/secao4/ps5fisico.png','PS5 Edição Disco Físico')" >Console PS5</button>
                     </div>
                 </div>
-                <div class="edicao">
-                    <div class="digital">
-                        <a href="#">PS5 Edição Digital</a>
+                <div class="edicao" >
+                    <div class="digital" onclick="activesd()">
+                        <button onclick="mudarTexto2('assets/images/secao4/ps5digital.png', 'PS5 Digital')" >PS5 Edição Digital</button>
                     </div>
                 </div>
             </div>
@@ -246,8 +245,20 @@
                     <div class="sub_head">Integração do PlayStation®VR</div>
                     <div class="infos_desc">Conecte seu PlayStation VR ao console PS5 para curtir jogos compatíveis com o PS VR. Para configurar seu PS VR com o console PS5, você precisará da PlayStation Camera2 para PS4 e do adaptador para PlayStation Camera (não é necessário comprar).</div>
                 </div>
+                <div class="digital_infos">
+                    <div class="infos_head">Mais recursos do PS5 Edição Digital</div>
+                    <div class="infos_desc">O PS5 Edição Digital é uma versão totalmente digital do console PS5 sem unidade de disco. Entre em sua conta para a PlayStation Network e acesse a PlayStation®Store para comprar e baixar jogos.3</div>
+                    <div class="sub_head">Compatibilidade regressiva</div>
+                    <div class="infos_desc">Jogue uma variedade de jogos digitais do PS4 em seu PS5 Edição Digital.</div>
+                    <div class="sub_head">Jogo turbinado</div>
+                    <div class="infos_desc">Curta taxas de quadros mais rápidas e uniformes em jogos digitais selecionados do PS4 e do PS VR.</div>
+                    <div class="sub_head">Atualize jogos digitais do PS4 para jogos digitais do PS5</div>
+                    <div class="infos_desc">O PS5 Edição Digital oferece aos editores de jogos a possibilidade de permitir que os jogadores atualizem seus jogos digitais do PS4 para jogos digitais do PS5.4</div>
+                    <div class="sub_head">Integração do PlayStation VR</div>
+                    <div class="infos_desc">Conecte seu PlayStation VR ao PS5 Edição Digital para curtir jogos digitais compatíveis com o PS VR. Para configurar seu PS VR com seu PS5 Edição Digital, você precisará da PlayStation Camera2 para PS4 e do adaptador para PlayStation Camera (não é necessário comprar).</div>
+                </div>
                 <div class="fisico_image">
-                    <img src="assets/images/secao4/ps5fisico.png" alt="PS5 Edição Disco Físico">
+                    <img class="imgedicao" src="assets/images/secao4/ps5fisico.png" alt="PS5 Edição Disco Físico">
                 </div>
             </div>
             <div class="navegue">
@@ -428,5 +439,6 @@
             
         </div>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
