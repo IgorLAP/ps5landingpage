@@ -33,3 +33,12 @@ window.addEventListener('scroll', function(){
         header.classList.remove('fixed');
     }
 })
+
+function abrirMenu(){
+   const drop = document.querySelector('.dropTest');
+   if(drop.classList.contains('displayFlex') == false){
+       drop.classList.add('displayFlex');
+   } else{
+       drop.classList.remove('displayFlex');
+   }
+}
